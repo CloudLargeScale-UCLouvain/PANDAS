@@ -10,7 +10,7 @@
    - [Setup and Build](#setup-and-build)
    - [Running Experiments](#running-experiments)
    - [Plotting Results](#plotting-results)
-4. [Prototype](#testnet)
+4. [Prototype](#prototype)
    - [Setup and Build](#setup-and-build-1)
    - [Running Experiments](#running-experiments-1)
    - [Plotting Results](#plotting-results-1)
@@ -28,7 +28,7 @@ The repository includes:
 - The **scripts** to run the experiments
 - The **plotting script** to plot experiments results
 
-Both the simulator and the testnet implementations were run on **Linux-based operating systems**.
+Both the simulator and the prototype implementations were run on **Linux-based operating systems**.
 
 ---
 
@@ -47,7 +47,7 @@ PANDAS/
 │   ├── configs/   # Configuration files for network simulations
 │   ├── Results/   # Experiment results
 │   └── python/    # Plotting scripts
-└── testnet/       # Source code for real-world testnet experiments
+└── prototype/       # Source code for real-world prototype experiments
     ├── results/   # Prototype experiment results
     └── python/    # Log processing and plotting
 ```
@@ -111,7 +111,7 @@ The generated plots will be saved in `simulator/python/plots/`
 
 ## 🌐 Prototype
 
-The **testnet** is implemented in **Go** and built on top of [libp2p](https://libp2p.io/).
+The **prototype** is implemented in **Go** and built on top of [libp2p](https://libp2p.io/).
 
 For the paper, we run the prototype on [Grid5000](https://www.grid5000.fr/), a **French distributed cluster** for experiment-driven research in computer science.  
 It can also be executed locally at a smaller scale.
@@ -120,19 +120,19 @@ It can also be executed locally at a smaller scale.
 
 ### 🔧 Setup and Build
 
-To install requirements and build the testnet:
+To install requirements and build the prototype:
 
 ```bash
-cd testnet/
+cd prototype/
 sudo chmod +x setup.sh && ./setup.sh
 ```
 
 This script installs:
 - The latest version of **Go**
 - All required dependencies
-- The testnet binaries
+- The prototype binaries
 
-After setup, the testnet is ready to run experiments.
+After setup, the prototype is ready to run experiments.
 
 ---
 
@@ -155,8 +155,8 @@ Run the network using the topology file:
 ```
 
 🗂 Results will be stored in:
-- `testnet/results/` → Experiment results  
-- `testnet/logs/` → Detailed logs
+- `prototype/results/` → Experiment results  
+- `prototype/logs/` → Detailed logs
 
 ---
 
@@ -165,10 +165,10 @@ Run the network using the topology file:
 To process logs and plot results:
 
 ```bash
-cd testnet/python
+cd prototype/python
 python3 process_logs.py <results_folder>
 ```
 
-This generates visual analyses and metrics from the testnet experiments.
+This generates visual analyses and metrics from the prototype experiments.
 
 ---
