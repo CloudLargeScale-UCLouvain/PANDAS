@@ -1,4 +1,4 @@
-# 🐼 PANDAS: Simulator and Testnet Experiments
+# 🐼 PANDAS: Simulator and Prototype Experiments
 
 ---
 
@@ -10,7 +10,7 @@
    - [Setup and Build](#setup-and-build)
    - [Running Experiments](#running-experiments)
    - [Plotting Results](#plotting-results)
-4. [Testnet](#testnet)
+4. [Prototype](#testnet)
    - [Setup and Build](#setup-and-build-1)
    - [Running Experiments](#running-experiments-1)
    - [Plotting Results](#plotting-results-1)
@@ -34,7 +34,7 @@ Both the simulator and the testnet implementations were run on **Linux-based ope
 
 ## Hardware
 
-We run the simulator and a local version of the testbed on a server with 18-core Intel Xeon Gold 5220 CPU and 96 GB
+We run the simulator and a local version of the prototype on a server with 18-core Intel Xeon Gold 5220 CPU and 96 GB
 of RAM.
 
 ---
@@ -48,7 +48,7 @@ PANDAS/
 │   ├── Results/   # Experiment results
 │   └── python/    # Plotting scripts
 └── testnet/       # Source code for real-world testnet experiments
-    ├── results/   # Testnet experiment results
+    ├── results/   # Prototype experiment results
     └── python/    # Log processing and plotting
 ```
 
@@ -109,11 +109,11 @@ The generated plots will be saved in `simulator/python/plots/`
 
 ---
 
-## 🌐 Testnet
+## 🌐 Prototype
 
 The **testnet** is implemented in **Go** and built on top of [libp2p](https://libp2p.io/).
 
-For the paper, we run the testbed on [Grid5000](https://www.grid5000.fr/), a **French distributed testbed** for experiment-driven research in computer science.  
+For the paper, we run the prototype on [Grid5000](https://www.grid5000.fr/), a **French distributed cluster** for experiment-driven research in computer science.  
 It can also be executed locally at a smaller scale.
 
 ---
@@ -146,7 +146,7 @@ First, generate a `nodes.csv` file defining the network topology (list of nodes 
 ./create_topo.sh <number_of_nodes>
 ```
 
-#### 2. Run the Testnet
+#### 2. Run the Prototype
 
 Run the network using the topology file:
 
