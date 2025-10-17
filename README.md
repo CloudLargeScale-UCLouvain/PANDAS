@@ -5,15 +5,16 @@
 ## 📘 Table of Contents
 
 1. [Introduction](#introduction)
-2. [Simulator](#simulator)
+2. [Hardware](#hardware)
+3. [Simulator](#simulator)
    - [Setup and Build](#setup-and-build)
    - [Running Experiments](#running-experiments)
    - [Plotting Results](#plotting-results)
-3. [Testnet](#testnet)
+4. [Testnet](#testnet)
    - [Setup and Build](#setup-and-build-1)
    - [Running Experiments](#running-experiments-1)
    - [Plotting Results](#plotting-results-1)
-4. [Repository Structure](#repository-structure)
+5. [Repository Structure](#repository-structure)
 
 ---
 
@@ -28,6 +29,13 @@ The repository includes:
 - The **plotting script** to plot experiments results
 
 Both the simulator and the testnet implementations were run on **Linux-based operating systems**.
+
+---
+
+## Hardware
+
+We run the simulator and a local version of the testbed on a server with 18-core Intel Xeon Gold 5220 CPU and 96 GB
+of RAM.
 
 ---
 
